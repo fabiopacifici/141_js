@@ -230,8 +230,159 @@ console.log(getAnArrayRandomNumbers(1, 50, 5));
 
 pari o dispari: scrivere una funzione per verificare se un numero è pari o dispari, quindi chiedere un numero all'utente e comunicargli se è pari o dispari
 
+  if (thisNumber % 2 === 0) {
+    // pari
+  } else {
+   //dispari
+  }
 
 */
 
+/* const thisNumber = 5
 
+// check if the number is even 
+if (thisNumber % 2 === 0) {
+  console.log('pari');
+
+} else {
+  // otherwise is off
+  // log the result
+  //dispari
+  console.log('dispari');
+}
+ */
+
+
+// wrap the logic above inside a function with a clever name
+//const thisNumber = 5
+
+function isEvenNumber(numb) {
+
+  // check if the number is even 
+  if (numb % 2 === 0) {
+    return true
+  }
+  return false
+
+}
+// invoke the function
+// ask the user for a number
+const thisNumber = 20
+isEvenNumber(thisNumber) // true|false
+
+if (isEvenNumber(thisNumber)) {
+  console.log('É pari');
+
+} else {
+  console.log('É dispari');
+
+}
+
+
+// pass a paramenter that the function needs to accecpt to make its logic work
+
+
+
+// Crea una funzione che non accetta paramentri 
+// e che logga in console un numero
+
+
+// Create una funzione che accetta un paramentro 
+// e lo stampa in console
+
+
+
+
+
+
+function logMessage(thisMessageParam) {
+
+  console.log(thisMessageParam); // 💥
+
+}
+
+
+// global variable
+
+
+const textMessage = 'ciao'
+logMessage(textMessage) // argument gives the value to a parameter
+
+
+
+// Capitalize Word
+
+
+
+
+
+
+
+
+
+// param: word
+function capitalize(word) {
+
+  const fistCharacter = word.charAt(0).toUpperCase()
+  console.log(fistCharacter);
+  const restOfTheString = word.substring(1).toLowerCase()
+
+  const capitalizedWord = fistCharacter + restOfTheString
+
+
+  return capitalizedWord
+
+}
+
+
+
+
+const fabio = 'matrix'
+const movie = capitalize(fabio); // argument as variable
+console.log(capitalize('starWArs')); // directly passing a value
+
+console.log(movie);
+
+console.log(`${movie} is amazing`);
+
+
+
+
+
+
+// reverse array
+
+/* const reversedTeachers = [];
+for (let i = teachers.length - 1; i >= 0; i--) {
+  const thisTeacher = teachers[i]
+  reversedTeachers.push(thisTeacher);
+}
+console.log(reversedTeachers); */
+
+
+function reverseArray(arr) {
+  const reversedArr = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    const thisElement = arr[i]
+    reversedArr.push(thisElement);
+  }
+  console.log(reversedArr);
+  return reversedArr
+}
+
+console.log(reverseArray([1, 2, 3, 4, 5]));
+
+console.log([1, 2, 3, 4, 5].reverse());
+
+
+
+/* Parameter */
+// the thisIsCalledParamenter é il parametro
+function myFunction(thisIsCalledParameter) {
+
+}
+
+/*  Argument */
+const thisIsTheArgumentForTheFunction = 'Ciao'
+myFunction(thisIsTheArgumentForTheFunction) // argument passed to the function invokation
 
