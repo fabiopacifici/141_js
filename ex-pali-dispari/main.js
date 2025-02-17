@@ -81,3 +81,18 @@ function getRndInteger(min, max) {
 getRndInteger(2, 10)
  */
 
+
+
+const list = [1, 2, 3, 4]
+
+const listWithoutDuplicates = []
+for (let index = 0; index < list.length; index++) {
+  const thisElement = list[index];
+
+  if (!listWithoutDuplicates.includes(thisElement)) {
+    listWithoutDuplicates.push(thisElement)
+  }
+
+}
+
+console.log(listWithoutDuplicates);
