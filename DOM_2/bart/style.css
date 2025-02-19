@@ -1,0 +1,34 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container
+{
+  max-width: 1200px;
+  width: 80%;
+  margin: 2rem auto;
+  position: relative;
+}
+
+#board
+{
+  background-color: green;
+  border: 8px solid greenyellow;
+  height: 600px;
+  color: white;
+  font-family: cursive;
+  font-size: 1.15rem;
+  padding: 1rem;
+
+}
+
+#bart
+{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
