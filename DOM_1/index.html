@@ -23,8 +23,11 @@
     header {
       background-color: black;
       color: white;
-      padding: 0.75rem;
+      padding: 1rem;
       text-align: end;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
       button {
         padding: 0.5rem;
@@ -35,6 +38,13 @@
 
       nav {
         display: none;
+        background-color: white;
+        position: absolute;
+        right: 1rem;
+        top: 3.5rem;
+        padding: 1rem;
+        border-radius: 0.25rem;
+        box-shadow: 0 0 5px lightgray;
 
         ul {
           list-style: none;
@@ -53,6 +63,7 @@
 <body>
 
   <header>
+    <div class="logo">LOGO</div>
     <button>
       <i class="fas fa-bars"></i>
     </button>
